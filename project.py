@@ -91,6 +91,20 @@ def run_scheduler():
 
     except ValueError:
         messagebox.showerror("Input Error", "Enter valid numbers for requests and head position.")
+        # Tkinter GUI
+
+root = tk.Tk()
+root.title("Adaptive Disk Scheduling Visualizer")
+
+tk.Label(root, text="Request Sequence (comma-separated):").pack()
+entry_requests = tk.Entry(root)
+entry_requests.pack()
+
+tk.Label(root, text="Initial Head Position:").pack()
+entry_head = tk.Entry(root)
+entry_head.pack()
+
+
 
 
 
